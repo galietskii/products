@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="container">
+            <ul class="menu">
+                <li class="list"><a href="" class="link">Доставка</a></li>
+                <li class="list"><a href="" class="link">Оплата</a></li>
+                <li class="list"><a href="" class="link">Отзывы</a></li>
+                <li class="list"><a href="" class="link">Вопрос - ответ</a></li>
+                <li class="list"><a href="" class="link">Контакты</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="intro-header">
+        <div class="container">
+            <div class="item-header">
+                <div class="logo"><span class="logo-image"></span><span>SAS</span></div>
+                <div class="search-input">
+                    <input type="text" id="elastic">
+                    <img class="image__search" src="images/search.svg" alt="search">
+                </div>
+                <div class="call">
+                    <span>+38 (073) 437-47-11</span>
+                    <button type="button">Обратный звонок</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="intro-nav-header">
+        <div class="container">
+            <ul>
+                <li><a href="pizza.html">Пицца</a></li>
+                <li><a href="#">Бургеры</a></li>
+                <li><a href="#">Шаурма</a></li>
+                <li><a href="#">Соусы</a></li>
+                <li><a href="#">Напитки</a></li>
+                <li><a href="#">Салаты</a></li>
+            </ul>
+        </div>
+    </div>
+    <section class="catalog">
+        <div class="container">
+            <div class="sorts">
+                <button id="sort-asc"> Цена по возрастанию</button>
+                <button id="sort-desc"> Цена по убыванию</button>
+            </div>
+            <div id="nav" class="grid">
+
+                <div class="grid-item grid-item-catalog" data-sort="3">
+                    <div class="bg-white">
+                        <div class="thumb thumb-pizza">
+                            <img src="images/pizza/pizza1.png" alt="pizza">
+                        </div>
+                        <h3 class="grid-title name-shaurma">Пицца Овощная</h3>
+                        <p class="grid-title">соус красный, лук маринованный, грибы шампиньоны, перец болгарский, сыр моцарелла, помидор, кукуруза, лук зеленый, петрушка, укроп</p>
+                        <p class="grid-weight">26/32/50 см.</p>
+                        <p class="grid-price">119 грн.</p>
+                        <a class="grid-btn" href="#">Купить</a>
+                    </div>
+                </div>
+                <div class="grid-item grid-item-catalog" data-sort="1">
+                    <div class="bg-white">
+                        <div class="thumb">
+                            <img src="images/pizza/pizza2.png" alt="pizza">
+                        </div>
+                        <h3 class="grid-title name-shaurma">Пицца "Экзотика"</h3>
+                        <p class="grid-title">Кунжут, курица, орегано, бекон, перец болгарский, грибы шампиньоны, сливки лук маринованный, тесто, яичный блин, сыр Моцарелла</p>
+                        <p class="grid-weight">26/32/50 см.</p>
+                        <p class="grid-price">79 грн.</p>
+                        <a class="grid-btn" href="#">Купить</a>
+                    </div>
+                </div>
+                <div class="grid-item grid-item-catalog" data-sort="5">
+                    <div class="bg-white">
+                        <div class="thumb">
+                            <img src="images/pizza/pizza3.png" alt="pizza">
+                        </div>
+                        <h3 class="grid-title name-shaurma">Пицца "8 кусочков"</h3>
+                        <p class="grid-title">Соус белый Куриное филе Российский сыр Помидор желтый Кукуруза Моцарелла Куриное филе Огурец малосольный Моцарелла</p>
+                        <p class="grid-weight">32/50 см.</p>
+                        <p class="grid-price">129 грн.</p>
+                        <a class="grid-btn" href="#">Купить</a>
+                    </div>
+                </div>
+                <div class="grid-item grid-item-catalog" data-sort="7">
+                    <div class="bg-white">
+                        <div class="thumb">
+                            <img src="images/pizza/pizza4.png" alt="chair">
+                        </div>
+                        <h3 class="grid-title name-shaurma">Пицца "Лилия"</h3>
+                        <p class="grid-title">Состав: Соус красный, Моцарелла, Помидор, Огурец соленый, Колбаски, Бекон, Куриное филе, Петрушка, Укроп, Лук зеленый</p>
+                        <p class="grid-weight">32/50 см.</p>
+                        <p class="grid-price">139 грн.</p>
+                        <a class="grid-btn" href="#">Купить</a>
+                    </div>
+                </div>
+                <div class="grid-item grid-item-catalog" data-sort="2">
+                    <div class="bg-white">
+                        <div class="thumb thumb-pizza">
+                            <img src="images/pizza/pizza5.png" alt="pizza">
+                        </div>
+                        <h3 class="grid-title name-shaurma">Пицца BitCoin</h3>
+                        <p class="grid-title">Состав: Куриное филе, ананас, соус красный, тесто, сыр Моцарелла</p>
+                        <p class="grid-weight">26/32/50 см.</p>
+                        <p class="grid-price">79 грн.</p>
+                        <a class="grid-btn" href="#">Купить</a>
+                    </div>
+                </div>
+                <div class="grid-item grid-item-catalog" data-sort="6">
+                    <div class="bg-white">
+                        <div class="thumb">
+                            <img src="images/pizza/pizza6.png" alt="pizza">
+                        </div>
+                        <h3 class="grid-title name-shaurma">Пицца "Кантри"</h3>
+                        <p class="grid-title">Состав: Бекон/ Охотничьи колбаски/ лук маринованный/ помидоры/ соус красный/ тесто/ сыр Моцарелла/  яйцо куриное</p>
+                        <p class="grid-weight">26/32/50 см.</p>
+                        <p class="grid-price">129 грн.</p>
+                        <a class="grid-btn" href="#">Купить</a>
+                    </div>
+                </div>
+                <div class="grid-item grid-item-catalog" data-sort="4">
+                    <div class="bg-white">
+                        <div class="thumb">
+                            <img src="images/pizza/pizza7.png" alt="pizza">
+                        </div>
+                        <h3 class="grid-title name-shaurma">Пицца Бекон</h3>
+                        <p class="grid-title">соус красный , бекон, помидор ,укроп, петрушка, лук зеленый, сыр Моцарелла</p>
+                        <p class="grid-weight">32/50 см.</p>
+                        <p class="grid-price">119 грн.</p>
+                        <a class="grid-btn" href="#">Купить</a>
+                    </div>
+                </div>
+                <div class="grid-item grid-item-catalog" data-sort="8 ">
+                    <div class="bg-white">
+                        <div class="thumb">
+                            <img src="images/pizza/pizza8.png" alt="pizza">
+                        </div>
+                        <h3 class="grid-title name-shaurma">Пицца 'Kukumber'</h3>
+                        <p class="grid-title">соус красный, куриное филе, бекон, лук маринованный, моцарелла, российский сыр, перец острый маринованный</p>
+                        <p class="grid-weight">32/50 см.</p>
+                        <p class="grid-price">139 грн.</p>
+                        <a class="grid-btn" href="#">Купить</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="bg-white">
+            <div class="container">
+                <div class="footer-top">
+                    <div class="footer-top-item">
+                        <ul class="social">
+                            <li class="social-item"><a class="social-link social-youtube" href="#" target="_blank"></a></li>
+                            <li class="social-item"><a class="social-link social-vk" href="#" target="_blank"></a></li>
+                            <li class="social-item"><a class="social-link social-facebook" href="#" target="_blank"></a></li>
+                            <li class="social-item"><a class="social-link social-instagram" href="#" target="_blank"></a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-info">
+                        <span>198555, Невский пр. 140, офис 140</span>
+                        <span>+38 (073) 437-47-11</span>
+                        <button type="button">Обратный звонок</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="footer-bottom">
+                <p>Лучший магазин (с) 2019 Все права защищены. Интернет-магазин шаурмы</p>
+                <a href="#">Политика конфиденциальности</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,344 @@
+$color-basic: black;
+body {
+    font-size: large;
+    background-color: #E5E5E5;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+.container {
+    max-width: 1110px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+li {
+    list-style-type: none;
+}
+.menu {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    padding: 4px 0;
+    .list {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .link {
+        text-decoration: none;
+        color: black;
+    }
+}
+.sorts button {
+    font-size: 14px;
+    border-radius: 20px;
+    background-color: transparent;
+    border: 2px solid black;
+    padding: 10px 25px;
+    margin-left: 36px;
+    transition: 0.5s ease;
+    cursor: pointer;
+    margin-bottom: 20px;
+    &:hover {
+        background-color: $color-basic;
+        color: white;
+    }
+}
+.grid-item.hide {
+    display: none;
+}
+.item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+.intro-header {
+    background-color: white;
+    border-bottom: 1px solid #EFEFEF;
+    padding-bottom: 40px;
+    padding-top: 10px;
+}
+.logo {
+    color: $color-basic;
+    font-size: 36px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    letter-spacing: 4px;
+}
+.logo-image {
+    display: block;
+    width: 80px;
+    height: 80px;
+    background-image: url(../images/logo.svg);
+    margin-right: 20px;
+}
+.item-header
+    input {
+        border: none;
+        background: #EFEFEF;
+        border-radius: 40px; 
+        padding: 11px 20px;   
+    }
+    .search-input {
+        position: relative;
+    }
+    .image__search {
+        position: absolute;
+        left: 20px;
+        top: 10px;
+    }
+    .call span {
+        font-size: 16px;
+    }
+    .call button {
+        font-size: 14px;
+        border-radius: 20px;
+        background-color: transparent;
+        border: 2px solid $color-basic;
+        padding: 10px 25px;
+        margin-left: 36px;
+        transition: 1s ease;
+        cursor: pointer;
+        &:hover {
+            background-color: $color-basic;
+            color: white;
+        }
+    }
+    .intro-nav-header {
+        background-color: white;
+        padding: 15px 0;
+        ul {
+            display: flex;
+            justify-content: center;
+        }
+        li {
+            margin-right: 20px;
+            margin-left: 20px;
+        }
+        a {
+            text-decoration: none;
+            color: #000000;
+            font-size: 16px;
+            margin: 0;
+        }
+    }
+    .flex-banner {
+        display: flex;
+        justify-content: space-between;
+    }
+    .banner {
+        position: relative;
+        background: black;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        padding-top: 103px;
+        padding-bottom: 21px;
+        color: white;
+        .title {
+            font-size: 48px;
+            font-weight: 700;
+            margin-bottom: 42px;
+        }
+        .title-h2 {
+            font-size: 24px;
+            font-weight: 700;
+        }
+        p {
+            margin-bottom: 50px;
+            max-width: 315px;
+            line-height: 1.5;
+        }
+        }
+        .btn {
+            display: inline-block;
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+            border-radius: 20px;
+            background-color: transparent;
+            border: 2px solid white;
+            padding: 9px 47px;
+            transition: 1s ease;
+            &:hover {
+                background-color: white;
+                color: $color-basic;
+            }
+    }
+    .left-banner {
+        display: inline-block;
+    }
+    .logo-image-banner {
+        display: inline-block;
+        margin-right: 100px;
+    }
+    .logo-image-banner img {
+        width: 500px
+    }
+    .bg-white {
+        background-color: white;
+        border-radius: 20px;
+    }
+    .bg-pink {
+        background-color: $color-basic;
+        color: white;
+        padding: 27px 41px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .bg-pink-item {
+        flex: 0 0 60%;
+    }
+    .bg-pink input {
+        font-size: 14px;
+        border: 1px solid white;
+        border-radius: 20px;
+        padding: 9px 15px;
+    }
+    .bg-pink-img {
+        flex: 0 0 40%;
+        text-align: center;
+    }
+    .bg-pink h3 {
+        font-size: 18px;
+        font-weight: 700;
+        margin-top: 0;
+        margin-bottom: 21px;
+    }
+    .catalog {
+        padding-top: 60px;
+        padding-bottom: 133px;
+    }
+    .grid  {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 0 30px;
+        .grid-item-title {
+            grid-column: 1 / 4;
+            grid-row: 1 / 2;
+        }
+        .grid-item-img {
+            text-align: center;
+            grid-column: 4 / 5;
+            grid-row: 1 / 2;
+        }
+        .grid-item-left {
+            grid-column: 1 / 3;
+            grid-row: 3 / 4;
+            margin-top: 80px;
+        }
+        .grid-item-right {
+            grid-column: 3 / 5;
+            grid-row: 3 / 4;
+            margin-top: 80px;
+        }
+        .grid-item-catalog {
+            text-align: center;
+            border-radius: 20px;
+            padding-bottom: 20px;
+        }
+        .grid-item-catalog .bg-white {
+            padding: 28px 30px;
+        }
+        .grid-weight {
+            font-size: 15px;
+            font-weight: 500;
+        }
+        .grid-price {
+            font-size: 21px;
+            font-weight: 500;
+        }
+        .grid-btn {
+            border-radius: 20px;
+            background-color: $color-basic;
+            color: white;
+            border: 2px solid $color-basic;
+            text-decoration: none;
+            padding: 10px 25px;
+            margin-left: 0px;
+            transition: 1s ease;
+            cursor: pointer;
+        }
+        .thumb img {
+            width: 200px;
+            height: 180px;
+        }
+        .bg-pink-item .btn {
+            display: block;
+            text-align: center;
+            max-width: 166px;
+            padding: 8px 0;
+            margin-bottom: 16px;
+        }
+    }
+    .footer-info span {
+        font-size: 16px;
+        margin-left: 36px;
+    }
+    .footer-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 25px;
+        padding-bottom: 20px;
+    }
+    .footer-bottom {
+        display: flex;
+        justify-content: space-between;
+        color: #828282;
+        padding: 26px 0;
+        font-size: 12px;
+    }
+    .footer-bottom p {
+        margin: 0;
+    }
+    .footer-bottom a {
+        color: #828282;
+        text-decoration: none;
+    }
+    .footer-info button {
+        font-size: 14px;
+        border-radius: 20px;
+        background-color: transparent;
+        border: 2px solid $color-basic;
+        padding: 10px 25px;
+        margin-left: 36px;
+        transition: 1s ease;
+        cursor: pointer;
+        &:hover {
+            background-color: $color-basic;
+            color: white;
+        }
+    }
+    .social {
+        display: flex;
+        align-items: center;
+        list-style: none;
+        padding-left: 0;
+        .social-link {
+            border: 2px solid $color-basic;
+            display: block;
+            width: 45px;
+            height: 45px;
+            border-radius: 100%;
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+        .social-item {
+            margin-right: 20px;
+        }
+        .social-youtube {
+            background-image: url('../images/youtube.svg');
+        }
+        .social-vk {
+            background-image: url('../images/vk.svg');
+        }
+        .social-facebook {
+            background-image: url('../images/facebook.svg');
+        }
+        .social-instagram {
+            background-image: url('../images/instagram.svg');
+        }
+    }
